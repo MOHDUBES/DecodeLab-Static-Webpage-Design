@@ -1,0 +1,81 @@
+/* 3D Blueprint Illustration Styles */
+.blueprint-3d-scene {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    perspective: 4000px;
+    transform-style: preserve-3d;
+}
+
+.blueprint-3d-world {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg) rotateZ(45deg);
+}
+
+.blueprint-3d-floor {
+    position: absolute;
+    left: -300px;
+    top: -300px;
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+    transform: translateZ(-1px);
+}
+
+.box-3d {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.face-3d {
+    position: absolute;
+    box-sizing: border-box;
+    transform-origin: top left;
+}
+
+.face-building-top {
+    border: 1.5px solid #3B82F6;
+    background: rgba(255, 255, 255, 0.95);
+    background-image: linear-gradient(45deg, transparent 48%, rgba(59, 130, 246, 0.15) 48%, rgba(59, 130, 246, 0.15) 52%, transparent 52%), linear-gradient(-45deg, transparent 48%, rgba(59, 130, 246, 0.15) 48%, rgba(59, 130, 246, 0.15) 52%, transparent 52%);
+    background-size: 20px 20px;
+}
+
+.face-building-vertical {
+    border: 1.5px solid #3B82F6;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(59, 130, 246, 0.6) 15px, rgba(59, 130, 246, 0.6) 16px),
+        repeating-linear-gradient(90deg, transparent, transparent 8px, rgba(59, 130, 246, 0.3) 8px, rgba(59, 130, 246, 0.3) 9px),
+        rgba(255, 255, 255, 0.95);
+}
+
+.face-scaffold-vertical {
+    border: 1.5px solid #F97316;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(249, 115, 22, 0.8) 20px, rgba(249, 115, 22, 0.8) 21.5px),
+        repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(249, 115, 22, 0.8) 20px, rgba(249, 115, 22, 0.8) 21.5px),
+        linear-gradient(45deg, transparent 48%, rgba(249, 115, 22, 0.4) 48%, rgba(249, 115, 22, 0.4) 52%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(249, 115, 22, 0.4) 48%, rgba(249, 115, 22, 0.4) 52%, transparent 52%);
+    background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
+}
+
+.ui-window-3d {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #3B82F6;
+    transform-style: preserve-3d;
+    box-shadow: 15px 15px 0 rgba(59, 130, 246, 0.1);
+}
+
+.ui-x-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent 49%, #3B82F6 49.5%, #3B82F6 50.5%, transparent 51%),
+        linear-gradient(to top right, transparent 49%, #3B82F6 49.5%, #3B82F6 50.5%, transparent 51%);
+}
